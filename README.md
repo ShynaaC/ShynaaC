@@ -10,8 +10,6 @@ A tiny playable introduction, built from my C++ Space Invaders learning project.
 
 </div>
 
-The intro types two lines before the controls unlock. Once **HI THERE** and **I'M SHYNAA** are fully displayed, move with <kbd>←</kbd> <kbd>→</kbd> or <kbd>A</kbd> <kbd>D</kbd>, and fire with <kbd>Space</kbd>. Touch controls are included for mobile players.
-
 
 
 
