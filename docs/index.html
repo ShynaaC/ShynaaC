@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050807" />
+    <meta
+      name="description"
+      content="Shynaa's playable Space Invaders introduction."
+    />
+    <title>Shynaa · Space Invaders</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="arcade-shell">
+      <header class="masthead">
+        <p class="eyebrow">PLAYER 01 // PORTFOLIO TRANSMISSION</p>
+        <h1>SPACE INVADERS</h1>
+      </header>
+
+      <section class="cabinet" aria-label="Playable Space Invaders game">
+        <div class="screen-wrap">
+          <canvas
+            id="game"
+            width="224"
+            height="256"
+            tabindex="0"
+            aria-label="Space Invaders. Wait for both intro lines, then use left and right to move and Space to fire."
+          ></canvas>
+          <div class="screen-glow" aria-hidden="true"></div>
+        </div>
+
+        <div class="console">
+          <p id="status" class="status" aria-live="polite">
+            RECEIVING INTRO SEQUENCE…
+          </p>
+
+          <div class="controls" aria-label="Touch controls">
+            <button class="control-button" data-control="left" aria-label="Move left">
+              <span aria-hidden="true">◀</span>
+            </button>
+            <button class="control-button fire" data-control="fire" aria-label="Fire">
+              <span>FIRE</span>
+            </button>
+            <button class="control-button" data-control="right" aria-label="Move right">
+              <span aria-hidden="true">▶</span>
+            </button>
+          </div>
+
+          <p class="key-hint">
+            <span>MOVE&nbsp; ← → / A D</span>
+            <span>FIRE&nbsp; SPACE</span>
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        <a href="https://github.com/ShynaaC/ShynaaC/blob/main/spaceinv.cpp">VIEW C++ SOURCE</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/ShynaaC/ShynaaC">GITHUB</a>
+      </footer>
+    </main>
+
+    <script src="./game.js"></script>
+  </body>
+</html>
